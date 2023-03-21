@@ -46,3 +46,4 @@ La siguiente tabla fue creada utilizando las variables person_name, person_count
 
 Para obtener la siguiente tabla, se necesitó hacer la unión de la información en las tablas: 
 
+![S1_E3](https://user-images.githubusercontent.com/121647613/226656038-ecc0993a-c091-49cf-8e01-5c46e5e6c6cd.jpg)
