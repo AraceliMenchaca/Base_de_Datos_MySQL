@@ -2,7 +2,7 @@
 Este repositorio contiene los ejercicios de la Tasca M1 T01 del curso de Ciencia de Datos - Barcelona Activa
 
 # Ejercicio 1
-*A partir de los documentos adjuntos, crea una base da datos con MySQL*
+*1. A partir de los documentos adjuntos, crea una base da datos con MySQL*
 
 La base de datos se creo primero con el archivo "Estructura de la base de dades" que estableció las siguientes tablas: 
 
@@ -18,7 +18,7 @@ El resultado es el siguiente:
 ![Base_Datos_Movies](https://user-images.githubusercontent.com/121647613/226583601-07888862-58ff-4c44-926f-c6803217182c.png)
 
 
-*Muestra las características principales del esquema creado y explica las diferentes tablas y variantes que hay.*
+*2. Muestra las características principales del esquema creado y explica las diferentes tablas y variantes que hay.*
 
 La base de datos "Movies" cuenta con cinco tablas que tienen las siguientes características y relaciones:
 
@@ -35,4 +35,14 @@ Finalmente, la tabla tb_movie almacena el nombre de las películas(movie_title),
 # Ejercicio 2
 
 *Haz de obtener el nombre del país y los datos de nacimiento de aquellas personas por las cuales no conste una fecha de fallecimiento además de ordenar los datos de la persona más vieja a la más joven.*
+
+La siguiente tabla fue creada utilizando las variables person_name, person_country, y person_dob.  Para obtener las especificaciones que se piden, se aplicó IS NULL a person_dod y ASC a person_dob como se muestra en la siguiente imagen.
+
+![S1_E2](https://user-images.githubusercontent.com/121647613/226650550-3684f2f8-4f30-4890-a012-03f5ad83fc1b.jpg)
+
+# Ejercicio 3
+
+* Haz de obtener el nombre del género y el nombre total de películas de este genero y ordenarlo de forma descendente por el nombre total de películas.
+
+Para obtener la siguiente tabla, se necesitó hacer la unión de la información en las tablas: 
 
