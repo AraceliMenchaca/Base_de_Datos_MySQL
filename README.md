@@ -1,8 +1,8 @@
-# Sprint1_T_M1_T01
+ obtener el nombre del género y el número total de películas de ese género y ordenarlo en orden descendente según el número total de películas# Sprint1_T_M1_T01
 Este repositorio contiene los ejercicios de la Tasca M1 T01 del curso de Ciencia de Datos - Barcelona Activa
 
 # Ejercicio 1
-*1. A partir de los documentos adjuntos, crea una base da datos con MySQL*
+1. A partir de los documentos adjuntos, crea una base da datos con MySQL
 
 La base de datos se creo primero con el archivo "Estructura de la base de dades" que estableció las siguientes tablas: 
 
@@ -18,7 +18,7 @@ El resultado es el siguiente:
 ![Base_Datos_Movies](https://user-images.githubusercontent.com/121647613/226583601-07888862-58ff-4c44-926f-c6803217182c.png)
 
 
-*2. Muestra las características principales del esquema creado y explica las diferentes tablas y variantes que hay.*
+2. Muestra las características principales del esquema creado y explica las diferentes tablas y variantes que hay.
 
 La base de datos "Movies" cuenta con cinco tablas que tienen las siguientes características y relaciones:
 
@@ -34,7 +34,7 @@ Finalmente, la tabla tb_movie almacena el nombre de las películas(movie_title),
 
 # Ejercicio 2
 
-*Haz de obtener el nombre del país y los datos de nacimiento de aquellas personas por las cuales no conste una fecha de fallecimiento además de ordenar los datos de la persona más vieja a la más joven.*
+* Haz de obtener el nombre del país y los datos de nacimiento de aquellas personas por las cuales no conste una fecha de fallecimiento además de ordenar los datos de la persona más vieja a la más joven.
 
 La siguiente tabla fue creada utilizando las variables person_name, person_country, y person_dob.  Para obtener las especificaciones que se piden, se aplicó IS NULL a person_dod y ASC a person_dob como se muestra en la siguiente imagen.
 
@@ -44,6 +44,22 @@ La siguiente tabla fue creada utilizando las variables person_name, person_count
 
 * Haz de obtener el nombre del género y el nombre total de películas de este genero y ordenarlo de forma descendente por el nombre total de películas.
 
-Para obtener la siguiente tabla, se necesitó hacer la unión de la información en las tablas: 
+Para obtener la siguiente tabla, se necesitó hacer la unión de dos tablas: tb_genre y tb_movie a través de genre_id, además de la funciones COUNT, GROUP BY y ORDER BY para que el código pudiera funcionar correctamente.
 
-![S1_E3](https://user-images.githubusercontent.com/121647613/226656038-ecc0993a-c091-49cf-8e01-5c46e5e6c6cd.jpg)
+
+![Screenshot_20230321_220052_Slides](https://user-images.githubusercontent.com/121647613/226740135-f23f3425-e26c-413f-bd68-eb7998379798.jpg)
+
+# Ejercicio 4
+
+ * Haz de obtener el nombre del género y el número total de películas de ese género y ordenarlo en orden descendente según el número total de películas
+
+En esta tabla se pudo comprobar la razón de las tres primary keys en tb_movie_person pues aquí se unieron las tres tablas de la siguiente manera. Primero tb_person y tb_movie_person a través person_id, después tb_movie con tb_movie_person a través de movie_id y finalmente tb_role con tb_movie_person a través de role_id. Además de usar las funciones COUNT, >=, ORDER BY y ASC.
+
+![Screenshot_20230321_220402_Slides](https://user-images.githubusercontent.com/121647613/226740736-a69a48f8-7ecf-4089-9212-823313bf4014.jpg)
+
+
+
+
+
+
+
