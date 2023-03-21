@@ -14,7 +14,8 @@ La base de datos se creo primero con el archivo "Estructura de la base de dades"
 
 Es importante mencionar que las tablas creadas no contenian ninguna información por lo que se usó el archivo "Estructura de la base de dades" para así poder hacer las consultas necesarias.  
 
-El resultado es el siguiente:  
+El resultado es el siguiente:
+
 ![Base_Datos_Movies](https://user-images.githubusercontent.com/121647613/226583601-07888862-58ff-4c44-926f-c6803217182c.png)
 
 
@@ -22,15 +23,15 @@ El resultado es el siguiente:
 
 La base de datos "Movies" cuenta con cinco tablas que tienen las siguientes características y relaciones:
 
-La tabla tb_genre almacena los diferentes géneros de película(genre_name) con su identificador (genre_id), la fecha de creación (created_date) y de actualización (updated_date), así como el usuario(created_by_user).  El Primary Key de esta tabla es el campo 'genre_id' que conecta a la tabla tb_movie, siendo esta la unica conexión con las otras tablas.
+La tabla **tb_genre** almacena los diferentes géneros de película(genre_name) con su identificador (genre_id), la fecha de creación (created_date) y de actualización (updated_date), así como el usuario(created_by_user).  El Primary Key de esta tabla es el campo genre_id que conecta a la tabla tb_movie, siendo esta la unica conexión con las otras tablas.
 
-La tabla tb_movie_person es la única tabla que contiene tres Primary Keys: movie_id, person_id y role_id las cuales conectan a las tablas tb_movie, tb_person y tb_role respectivamente.  Esta tabla además almacena información sobre premios(movie_award_ind) y fechas de creación (created_date) y actualización (updated_date).
+La tabla **tb_movie_person** es la única tabla que contiene tres Primary Keys: movie_id, person_id y role_id las cuales conectan a las tablas tb_movie, tb_person y tb_role respectivamente.  Esta tabla además almacena información sobre premios(movie_award_ind) y fechas de creación (created_date) y actualización (updated_date).
 
-La tabla role_id, cuya Primary Key es role_id, almacena información sobre los diferentes roles en una película (role_name).
+La tabla **role_id**, cuya Primary Key es role_id, almacena información sobre los diferentes roles en una película (role_name).
 
-La tabla tb_person contiene información de las personas que participaron en diferentes películas como lo son sus nombres (person_name), país de origen(person_country), fecha de nacimiento (person_dob) y de fallecimiento (person_dod) así como su identificador (person_id) que a la vez es la Primary Key.
+La tabla **tb_person** contiene información de las personas que participaron en diferentes películas como lo son sus nombres (person_name), país de origen(person_country), fecha de nacimiento (person_dob) y de fallecimiento (person_dod) así como su identificador (person_id) que a la vez es la Primary Key.
 
-Finalmente, la tabla tb_movie almacena el nombre de las películas(movie_title), su formato(movie_format) y fecha(movie_date), así como su género(movie_genre_id) que es un identificador relacionado con la tabla tb_genre sin ser un primary key.  El Primary Key de esta tabla es el identificador(movie_id).
+Finalmente, la tabla **tb_movie** almacena el nombre de las películas(movie_title), su formato(movie_format) y fecha(movie_date), así como su género(movie_genre_id) que es un identificador relacionado con la tabla tb_genre sin ser un primary key.  El Primary Key de esta tabla es el identificador(movie_id).
 
 
 # Ejercicio 2
@@ -46,7 +47,7 @@ La siguiente tabla fue creada utilizando las variables person_name, person_count
 
 * Haz de obtener el nombre del género y el nombre total de películas de este genero y ordenarlo de forma descendente por el nombre total de películas.
 
-Para obtener la siguiente tabla, se necesitó hacer la unión de dos tablas: tb_genre y tb_movie a través de genre_id, además de la funciones COUNT, GROUP BY y ORDER BY para que el código pudiera funcionar correctamente.
+En la siguiente tabla, se hizo la unión de dos tablas: tb_genre y tb_movie a través de genre_id, además de usar las funciones COUNT, GROUP BY y ORDER BY para que el código pudiera funcionar correctamente.
 
 
 ![Screenshot_20230321_220052_Slides](https://user-images.githubusercontent.com/121647613/226740135-f23f3425-e26c-413f-bd68-eb7998379798.jpg)
