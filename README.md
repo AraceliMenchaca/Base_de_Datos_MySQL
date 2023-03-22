@@ -27,7 +27,7 @@ La tabla **tb_genre** almacena los diferentes géneros de película(genre_name) 
 
 La tabla **tb_movie_person** es la única tabla que contiene tres Primary Keys: movie_id, person_id y role_id las cuales conectan a las tablas tb_movie, tb_person y tb_role respectivamente.  Esta tabla además almacena información sobre premios(movie_award_ind) y fechas de creación (created_date) y actualización (updated_date).
 
-La tabla **role_id**, cuya Primary Key es role_id, almacena información sobre los diferentes roles en una película (role_name).
+La tabla **tb_role**, cuya Primary Key es role_id, almacena información sobre los diferentes roles en una película (role_name).
 
 La tabla **tb_person** contiene información de las personas que participaron en diferentes películas como lo son sus nombres (person_name), país de origen(person_country), fecha de nacimiento (person_dob) y de fallecimiento (person_dod) así como su identificador (person_id) que a la vez es la Primary Key.
 
@@ -66,7 +66,7 @@ En esta tabla se pudo comprobar la razón de las tres primary keys en tb_movie_p
 
  * Haz de crear un nuevo género llamado 'Documental' en el cual tenga como identificador el nombre 69.
  
- Esta tabla fue sencilla de crear pues aunque la columna de identificadores genre_id es el Primary Key en la tabla tb_genre, no tenía activado el campo de AI (Auto-Increment). Las funciones que se usaron fueron INSERT INTO y VALUES.
+ Esta tabla fue sencilla de crear pues la columna de identificadores genre_id que también es el Primary Key en la tabla tb_genre, no tenía activado el campo de AI (Auto-Increment) por lo que se pudo agregar el número 69 sin problema. Las funciones que se usaron fueron INSERT INTO y VALUES.
  
  ![Screenshot_20230321_222123_Slides](https://user-images.githubusercontent.com/121647613/226743849-45b8bdf9-a489-4303-a60e-c79d324def9e.jpg)
 
