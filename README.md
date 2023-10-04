@@ -1,4 +1,4 @@
-# Sprint1_T_M1_T01
+# Base de Datos MySQL
 Este repositorio contiene los ejercicios de la Tasca M1 T01 del curso de Ciencia de Datos - Barcelona Activa
 
 # Ejercicio 1
